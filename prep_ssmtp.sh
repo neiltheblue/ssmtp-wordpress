@@ -13,4 +13,6 @@ do
   fi
 done
 
+echo 'sendmail_path = "/usr/sbin/ssmtp -t"' > /usr/local/etc/php/conf.d/mail.ini
+
 exec "$@"
